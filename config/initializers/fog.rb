@@ -5,7 +5,9 @@ CarrierWave.configure do |config|
     :aws_secret_access_key  => ENV['AWS_SECRET_ACCESS_KEY'],
     :region                 => ENV['AWS_REGION']
   }
-
+  #Required for Heroku
+  config.cache_dir = "#{Rails.root}/tmp/uploads"
+  
   config.fog_directory  = ENV['AWS_BUCKET']
   config.fog_public     = false
 end
