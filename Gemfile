@@ -28,6 +28,18 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# Image management
+# file uploads via carrierwave
+gem 'carrierwave'
+# handle file sizes
+gem 'mini_magick', '~> 3.5.0'
+# Ruby cloud services library to connect ot AWS CDN
+gem 'fog'
+# implement security to protect environment variables
+gem 'figaro'
+gem 'unf'
+
 group :production do
   # Use postgresql as the database for Active Record
   gem 'pg', '~> 0.18'
