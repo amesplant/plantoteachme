@@ -31,9 +31,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Image management
 # file uploads via carrierwave
-gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+gem 'carrierwave'
 # handle file sizes
-gem 'mini_magick'
+gem 'mini_magick', '~> 3.5.0'
 # Ruby cloud services library to connect ot AWS CDN
 gem 'fog'
 # implement security to protect environment variables
