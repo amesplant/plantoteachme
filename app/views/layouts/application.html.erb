@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Plantoteachme</title>
+    <title>Plan to Teach</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Cormorant|Raleway|Catamaran|Droid+sans|Kanit' %>
   </head>
 
   <body>
+    <header>
+      <div class="header-container">
+        <div class="header-menu">
+          <%= link_to root_path do %>
+            <div class="logo">
+              plantoteach
+            </div>
+          <% end %>
+        </div>
+
+        <div class="computer">
+
+        </div>
+      </div>
+    </header>
+    <div class="header-menu">
+      <%= link_to '', root_path, class: "contact" %>
+    </div>
+
     <%= yield %>
   </body>
 </html>
