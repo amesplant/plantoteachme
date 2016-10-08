@@ -1,0 +1,93 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+}
+
+html {
+  font-family: "Raleway", helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Kanit", helvetica, arial, sans-serif;
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  outline: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+header {
+  display:block;
+  padding-top: 0;
+  background-color: #299347;
+  height: 290px;
+}
+
+.ie9 header {
+    -webkit-filter: none;
+    filter: none
+}
+
+header .header-menu {
+  display: block;
+  height: 100px;
+  padding: 30px;
+}
+
+header .logo  {
+  display:block;
+  height: 35px;
+  color: white;
+  background-image: asset-url('logo-plantoteachme.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 45px;
+  font-family: "Kanit", helvetica, arial, sans-serif;
+  font-size: 1.7em;
+}
+
+.header-menu .contact {
+  display: block;
+  float: right;
+  position: relative;
+  top: 42px;
+  right: 110px;
+  width: 34px;
+  height: 58px;
+  outline: none;
+
+  background-image: asset-url('pencil-cup.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.header-menu .contact:hover {
+  background-image: asset-url('pencil-cup-hover.png');
+}
+
+header .computer {
+  position: relative;
+  right: 70px;
+  height: 272px;
+  background-image: asset-url('computer-bookshelf.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.header-container {
+  background-image: asset-url('header-background.png');
+  background-repeat: no-repeat;
+  background-position: 50px 139px;
+}
