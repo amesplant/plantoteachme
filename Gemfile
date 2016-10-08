@@ -30,12 +30,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Image management
+# Ruby cloud services library to connect ot AWS CDN
+gem 'fog'
 # file uploads via carrierwave
 gem 'carrierwave'
 # handle file sizes
 gem 'mini_magick', '~> 3.5.0'
-# Ruby cloud services library to connect ot AWS CDN
-gem 'fog'
 # implement security to protect environment variables
 gem 'figaro'
 gem 'unf'
