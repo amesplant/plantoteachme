@@ -14,8 +14,13 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Kanit", helvetica, arial, sans-serif;
-  color: #666;
+  font-family: "Catamaran", helvetica, arial, sans-serif;
+  font-weight: 300;
+  color: #1B759D;
+}
+
+h1 {
+  font-size: 2.2em;
 }
 
 a {
@@ -31,7 +36,7 @@ a:active, a:hover {
 header {
   display:block;
   padding-top: 0;
-  background-color: #299347;
+  background-color: #1B759D;
   height: 290px;
 }
 
@@ -58,24 +63,7 @@ header .logo  {
   font-size: 1.7em;
 }
 
-.header-menu .contact {
-  display: block;
-  float: right;
-  position: relative;
-  top: 42px;
-  right: 110px;
-  width: 34px;
-  height: 58px;
-  outline: none;
 
-  background-image: asset-url('pencil-cup.png');
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.header-menu .contact:hover {
-  background-image: asset-url('pencil-cup-hover.png');
-}
 
 header .computer {
   position: relative;
@@ -90,4 +78,54 @@ header .computer {
   background-image: asset-url('header-background.png');
   background-repeat: no-repeat;
   background-position: 50px 139px;
+}
+
+.secondary-menu .contact {
+  display: block;
+  float: right;
+  position: relative;
+  top: 42px;
+  right: 110px;
+  width: 34px;
+  height: 58px;
+  outline: none;
+
+  background-image: asset-url('pencil-cup.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.row {
+  display: block;
+  padding: 40px;
+}
+
+// navigation
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {
+  background-color: #555;
+}
+
+ul.topnav li.icon {
+  display: none;
 }
