@@ -66,8 +66,7 @@ header .logo  {
 
 
 header .computer {
-  position: relative;
-  right: 70px;
+  margin-right: 2%;
   height: 272px;
   background-image: asset-url('computer-bookshelf.png');
   background-repeat: no-repeat;
@@ -138,7 +137,14 @@ ul.topnav li.icon {
 }
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+@media only screen and (max-width: 480px) {
+	/* Mobile styles go here */
+	body{width:100%;}
+	img{max-width:90%;}
+}
+
+@media screen and (max-width:680px) {
 
   header .computer {
     display: block;
