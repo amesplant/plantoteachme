@@ -16,7 +16,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Catamaran", helvetica, arial, sans-serif;
   font-weight: 300;
-  color: #1B759D;
+  color: #68706E;
 }
 
 h1 {
@@ -36,8 +36,9 @@ a:active, a:hover {
 header {
   display:block;
   padding-top: 0;
-  background-color: #1B759D;
-  height: 290px;
+  background-color: #349C54;
+  height: 270px;
+  border-bottom: 3px solid #1B759D;
 }
 
 .ie9 header {
@@ -71,19 +72,34 @@ header .computer {
   background-image: asset-url('computer-bookshelf.png');
   background-repeat: no-repeat;
   background-position: right;
+  -webkit-background-size: 345px 272px;
+  background-size: 345px 272px;
 }
 
 .header-container {
   background-image: asset-url('header-background.png');
   background-repeat: no-repeat;
-  background-position: 50px 139px;
+  background-position: 50px 116px;
+  -webkit-background-size: 2200px 160px;
+  background-size: 2200px 160px;
+
+}
+
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  background-color: #349C54;
+  width: 100%;
 }
 
 .secondary-menu .contact {
   display: block;
   float: right;
   position: relative;
-  top: 25px;
+  top: 45px;
   right: 90px;
   width: 34px;
   height: 58px;
@@ -92,6 +108,8 @@ header .computer {
   background-image: asset-url('pencil-cup.png');
   background-repeat: no-repeat;
   background-position: right;
+  -webkit-background-size: 34px 58px;
+  background-size: 34px 58px;
 }
 
 .secondary-menu .contact:hover {
@@ -136,6 +154,44 @@ ul.topnav li.icon {
   display: none;
 }
 
+// columns
+.column-1-3, .column-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+.column-1-3 {
+  width: 33%;
+}
+.column-1-2 {
+  width: 50%;
+}
+.column-2-3 {
+  width: 66%;
+}
+
+.profile-photo {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  -webkit-background-size: 300px 300px;
+  background-size: 300px 300px;
+  background-image: asset-url('amy-plant.png');
+  background-repeat: no-repeat;
+}
+
+.about-me .column-1-3 {
+  vertical-align: middle;
+}
+
+.about-me h1 {
+  font-family: "Exo", helvetica, arial, sans-serif;
+}
+
+.align-right {
+  text-align: right;
+}
+
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 
 @media only screen and (max-width: 480px) {
@@ -145,6 +201,16 @@ ul.topnav li.icon {
 }
 
 @media screen and (max-width:680px) {
+
+  .column-1-3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-me {
+    margin-top: 70px;
+  }
 
   ul.topnav {
     display: block;
