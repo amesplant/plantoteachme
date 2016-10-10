@@ -52,7 +52,7 @@ header .header-menu {
 }
 
 header .logo  {
-  display:block;
+  display: inline-block;
   height: 35px;
   color: white;
   background-image: asset-url('logo-plantoteachme.png');
@@ -66,8 +66,7 @@ header .logo  {
 
 
 header .computer {
-  position: relative;
-  right: 70px;
+  margin-right: 3%;
   height: 272px;
   background-image: asset-url('computer-bookshelf.png');
   background-repeat: no-repeat;
@@ -84,8 +83,8 @@ header .computer {
   display: block;
   float: right;
   position: relative;
-  top: 42px;
-  right: 110px;
+  top: 25px;
+  right: 90px;
   width: 34px;
   height: 58px;
   outline: none;
@@ -95,6 +94,10 @@ header .computer {
   background-position: right;
 }
 
+.secondary-menu .contact:hover {
+  background-image: asset-url('pencil-cup-hover.png');
+}
+
 .row {
   display: block;
   padding: 40px;
@@ -102,10 +105,13 @@ header .computer {
 
 // navigation
 ul.topnav {
+  display: inline-block;
+  float: right;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  z-index: 5;
 }
 
 ul.topnav li {
@@ -123,9 +129,46 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-  background-color: #555;
+  background-color: #D6862A;
 }
 
 ul.topnav li.icon {
   display: none;
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media only screen and (max-width: 480px) {
+	/* Mobile styles go here */
+	body{width:100%;}
+	img{max-width:90%;}
+}
+
+@media screen and (max-width:680px) {
+
+  ul.topnav {
+    display: block;
+  }
+
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  ul.topnav.responsive {
+    position: relative;
+    background-color: #6C9947;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
